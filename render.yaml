@@ -2,6 +2,7 @@ databases:
   - name: portfolio
     databaseName: portfolio
     user: portfolio
+    plan: free
 
 services:
   - type: web
