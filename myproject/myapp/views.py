@@ -23,3 +23,6 @@ def lucy(request):
 
 def statictest(request):
     return render(request, "statictest.html")
+
+def wordcounter(request):
+    return render(request, "wordcounter.html")
