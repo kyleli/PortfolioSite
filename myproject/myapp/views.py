@@ -11,7 +11,7 @@ def index(request):
     return render(request, "index.html", context)
 
 def counter(request):
-    words = request.GET['text']
+    words = request.POST['text']
     number_of_words = len(words.split(" "))
     context = {
         "number_of_words": number_of_words
@@ -20,3 +20,6 @@ def counter(request):
 
 def lucy(request):
     return render(request, "lucy.html")
+
+def statictest(request):
+    return render(request, "statictest.html")
